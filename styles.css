@@ -1,0 +1,459 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: #1a1a1a;
+    color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* About Section dengan Animasi */
+.about-section {
+    width: 90%; /* Sesuaikan lebar */
+    max-width: 600px; /* Maksimal lebar */
+    margin: 2rem auto; /* Jarak atas-bawah dan tengah */
+    border-radius: 20px;
+    background: linear-gradient(150deg, #1a1a1a, #333);
+    text-align: center;
+    pointer-events: auto; /* Pastikan interaksi pengguna diaktifkan */
+    font-family: 'Arial', sans-serif;
+    pointer-events: none; /* Menghilangkan efek sentuhan */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeInUp 1s ease-in-out forwards; /* Animasi fadeInUp */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Mulai dari posisi sedikit ke bawah */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Berakhir di posisi normal */
+    }
+}
+
+.profile-card {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: zoomIn 1s ease-in-out; /* Animasi zoomIn */
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #00b894;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    color: #ffff;
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Animasi fadeIn dengan delay */
+}
+
+/* Status Section */
+.status {
+    width: 90%; /* Sesuaikan lebar */
+    max-width: 600px; /* Maksimal lebar */
+    margin: 2rem auto; /* Jarak atas-bawah dan tengah */
+    border-radius: 20px;
+    background: linear-gradient(150deg, #1a1a1a, #333);
+    text-align: center;
+    pointer-events: auto; /* Pastikan interaksi pengguna diaktifkan */
+    font-family: 'Arial', sans-serif;
+    pointer-events: none; /* Menghilangkan efek sentuhan */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeInUp 1s ease-in-out forwards; /* Animasi fadeInUp */
+}
+
+.status h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #00b894;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.status-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px; /* Jarak antara grid dan tombol */
+}
+
+.status-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Animasi sama seperti Skills */
+    pointer-events: auto; /* Pastikan elemen bisa diklik */
+}
+
+.status-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.status-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.status-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.status-item p {
+    font-size: 1em;
+    color: white;
+}
+
+/* Skills Section */
+.skills {
+    width: 90%; /* Sesuaikan lebar */
+    max-width: 600px; /* Maksimal lebar */
+    margin: 2rem auto; /* Jarak atas-bawah dan tengah */
+    border-radius: 20px;
+    background: linear-gradient(150deg, #1a1a1a, #333);
+    text-align: center;
+    pointer-events: auto; /* Pastikan interaksi pengguna diaktifkan */
+    font-family: 'Arial', sans-serif;
+    pointer-events: none; /* Menghilangkan efek sentuhan */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeInUp 1s ease-in-out forwards; /* Animasi fadeInUp */
+}
+
+.skills h1 {
+    color: #fff;
+    margin: 50px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #00b894;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeIn 1s ease-in-out forwards;
+    pointer-events: auto; /* Pastikan elemen bisa diklik */
+}
+
+.skill-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.skill-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item i {
+    font-size: 3em;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1em;
+    color: white;
+}
+
+/* Tombol Musik */
+.music-btn {
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    animation: pulse 2s infinite;
+    margin-top: 20px; /* Jarak antara grid dan tombol */
+    pointer-events: auto; /* Pastikan tombol dapat diklik */
+}
+
+.music-btn:focus {
+    outline: none;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.music-btn:active {
+    transform: none;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.music-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.btn-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.play-text {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pause-text {
+    top: 150%;
+    transform: translateY(-50%);
+}
+
+.music-btn.playing .play-text {
+    top: -100%;
+}
+
+.music-btn.playing .pause-text {
+    top: 50%;
+}
+
+/* Animasi Pulse untuk Tombol */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animasi Efek Sentuhan */
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Class untuk efek sentuhan */
+.status-item.click-effect,
+.skill-item.click-effect {
+    animation: clickEffect 0.3s ease-in-out;
+}
+
+/* Footer */
+.uiverse-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.brand-section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.brand-section h2 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.license p {
+    color: #666;
+    line-height: 1.4;
+    font-size: 0.85rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-col a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.85rem;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: left;
+    padding: 2rem 0 0;
+    color: #666;
+    font-size: 0.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .brand-section,
+    .footer-col {
+        text-align: left;
+    }
+    
+    .copyright {
+        text-align: left;
+        padding-left: 1rem;
+    }
+}
+
+/* Footer Logo */
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #111;
+    color: #fff;
+}
+
+footer .social-links {
+    margin-bottom: 2px;
+}
+
+footer .social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff6347;
+}
+
+/* Animasi FadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
