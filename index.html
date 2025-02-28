@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo Portfolio">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#status">STATUS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="profile-card">
+            <h1 class="title">Tentang</h1>
+            <p class="description">
+                Saya adalah chandra pengembang web dengan pengalaman lebih dari 1 hari. 
+                Saya ahli dalam HTML, CSS, JavaScript. Saya suka menciptakan desain yang 
+                menarik dan fungsional untuk pengguna.
+            </p>
+        </div>
+    </section>
+
+<!-- Status Section -->
+<section id="status" class="status">
+    <h1>Status</h1>
+    <div class="status-grid">
+        <div class="status-item">
+            <img src="image/profile.jpg" alt="Guwaa">
+            <h3>Guwaa</h3>
+            <p>Perkenalkan guwa chandra</p>
+        </div>
+        <div class="status-item">
+            <img src="image/girls.jpg" alt="My Girls">
+            <h3>My Girls</h3>
+            <p>Perkenalkan cyipaa cewe gw</p>
+        </div>
+    </div>
+    <!-- Tombol Play Music -->
+    <button class="music-btn" id="playButton">
+        <span class="btn-text play-text">Play Music</span>
+        <span class="btn-text pause-text">Pause Music</span>
+    </button>
+</section>
+
+<!-- Audio Player -->
+<audio id="audioPlayer" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Browser tidak mendukung pemutaran audio
+</audio>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <h1>Keahlian Saya</h1>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <h3>Website</h3>
+            <p>Membangun website responsif.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Bot Wa</h3>
+            <p>Membuat asistent whatsapp.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="uiverse-footer">
+        <div class="footer-content">
+            <div class="brand-section">
+                <h2>Chandra</h2>
+                <div class="license">
+                    <p>MIT License</p>
+                    <p>All content (elements) on this site are published under the MIT License.</p>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Post Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>2025 Pixel Galaxies. All rights reserved. - Uiverse.io</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@chndra_woods" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vaz43e435fLulkYEq70M" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/zyroexecute" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
